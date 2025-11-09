@@ -9,13 +9,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Reset zoom to 100% */
+
+html {
+  font-size: 83.33%; /* 100/120 = 0.8333 */
+}
 
 body {
-  font-family: 'Poppins', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: #f8fafc;
-  line-height: 1.6;
+  font-size: 1rem; /* This will now be relative to the html font-size */
 }
 
 /* Global utility classes that can be used by other components */
