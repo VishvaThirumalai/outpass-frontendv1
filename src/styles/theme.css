@@ -1,0 +1,116 @@
+/* MIT Outpass Management System Theme - Professional Blue */
+:root {
+  /* Brand Colors - Professional Blue Theme */
+  --primary: #0052cc; /* Main brand color - UMIS-like deep blue */
+  --primary-50: #e6f0ff;
+  --primary-100: #cce0ff;
+  --primary-200: #99c2ff;
+  --primary-300: #66a3ff;
+  --primary-400: #3385ff;
+  --primary-500: #0066ff;
+  --primary-600: #0052cc; /* Current primary */
+  --primary-700: #003d99;
+  --primary-800: #002966;
+  --primary-900: #001433;
+
+  /* Secondary Colors */
+  --accent: #00875a; /* Success green */
+  --accent-light: #57d9a3;
+  --muted: #6b7280;
+  
+  /* Status Colors */
+  --success: #00875a;
+  --success-light: #e3fcef;
+  --warning: #ff991f;
+  --warning-light: #fff5e6;
+  --danger: #ef4444;
+  --danger-light: #fee2e2;
+  --info: #0065ff;
+  --info-light: #e6f0ff;
+
+  /* Background & Surface Colors */
+  --bg: #f5f7fa;
+  --card-bg: #ffffff;
+  --surface: #f8fafc;
+  --surface-hover: #f0f4f8;
+  --glass: rgba(255, 255, 255, 0.95);
+  
+  /* Borders & Dividers */
+  --border: #e6eef7;
+  --border-light: #f0f4f8;
+  --border-focus: #0052cc;
+
+  /* Typography */
+  --font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  --text-primary: #172b4d;
+  --text-secondary: #5e6c84;
+  --text-muted: #8993a4;
+  
+  /* Layout Measurements */
+  --max-content-width: 1200px;
+  --sidebar-width: 300px;
+  --header-height: 80px;
+  --marquee-height: 40px;
+  --footer-height: 48px;
+  
+  /* Spacing Scale */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(11, 31, 75, 0.04);
+  --shadow-md: 0 4px 8px rgba(11, 31, 75, 0.06);
+  --shadow-lg: 0 8px 16px rgba(11, 31, 75, 0.08);
+  --shadow-xl: 0 12px 24px rgba(11, 31, 75, 0.12);
+  
+  /* Z-index Scale */
+  --z-header: 1000;
+  --z-sidebar: 900;
+  --z-dropdown: 800;
+  --z-modal: 1100;
+}
+
+/* Base reset and typography */
+* { box-sizing: border-box; }
+html,body,#root { height: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background: var(--bg);
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,h5 { margin: 0 0 8px 0; font-weight: 700; color: #071126; }
+p, label, a, span { color: #334155; }
+
+/* Container helper */
+.app-container { max-width: var(--max-content-width); margin: 0 auto; padding: 20px; }
+
+/* Card */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+}
+
+/* Utility spacing */
+.gutter { gap: 16px; }
+.p-sm { padding: 8px; }
+.p-md { padding: 16px; }
+.p-lg { padding: 24px; }
+
+/* Smooth transitions */
+.soft-transition { transition: all 220ms cubic-bezier(.2,.9,.3,1); }
